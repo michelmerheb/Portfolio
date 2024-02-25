@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Michel Merheb | About me</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var aboutMeContent = document.querySelector('.AboutMe');
+            var revealButton = document.getElementById('revealButton');
+            var header2 = document.querySelector('h2');
+
+            aboutMeContent.style.display = 'none';
+            header2.style.display = 'block';
+
+            revealButton.addEventListener('click', function() {
+                if (aboutMeContent.style.display === 'none') {
+                    aboutMeContent.style.display = 'block';
+                    header2.style.display = 'none';
+                    revealButton.textContent = 'Hide';
+                } else {
+                    aboutMeContent.style.display = 'none';
+                    header2.style.display = 'block';
+                    revealButton.textContent = 'Get to know me';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About me</a></li>
+                <li><a href="Project.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <h2>Why did the button feel so important? 
+        <br> Because it knew that with just one click, it could reveal all about you! </h2>
+    <div class="AboutMe">
+        <h1 style="color: white; background-color: rgba(0, 0, 0, 0.521); width: 100%;">Know who I am</h1>
+        <p>My name is Michel Merheb, a Lebanese IT student who loves and works as a front-end web and mobile developer. Since I was around 10 years old, I've been passionate about technology and have always had the desire to know how computers work and how websites are created. I also love football and have been a Manchester United fan since I was 12 years old. That's pretty much all I can tell about myself. I'll leave the rest for you to discover! 😊</p>
+        <br>
+        <br>
+        <h1 style="color: white; background-color: rgba(0, 0, 0, 0.521); width: 100%;">Experience</h1>
+        <p>June 2023-September 2023 <br> BotThinks, Intern <br><br>
+            • Collaborated on MySQL database management, enhancing proficiency in database design and optimization. <br>
+            • Utilized APIs including Telegram, Youtube, Google Sheet, and Google Drive to enhance application functionality. <br>
+            • Used Languages: Python, SQL <br>
+            • Gained practical experience in troubleshooting and problem-solving within a professional setting. <br>
+        </p>
+    </div>
+    <div class="button">
+        <button id="revealButton">Get to know me</button>
+    </div>
+</body>
+</html>
